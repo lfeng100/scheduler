@@ -1,0 +1,269 @@
+/* Palette https://coolors.co/ffa400-009ffd-2a2a72-232528-eaf6ff */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-family: "Courier-New", monospace;
+  }
+  body {
+    background: #EAF6FF;
+    background-image: url("https://www.transparenttextures.com/patterns/corrugation.png");
+    padding: 0 16px;
+  }
+  
+  header {
+    background-color: #73A5C6;
+    margin: auto -16px;
+    text-align: center;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .name {
+    color: #fff;
+    font-family: "Century Gothic";
+    font-size: 1.5em;
+    font-weight: 100;
+  }
+
+  header .timer {
+    color: rgb(34, 23, 23);
+    font-family: "McLaren", cursive;
+    font-size: 2em;
+    display: inline-block;
+    /* padding-top: 20px; */
+  }
+
+  header button {
+    font-family: inherit;
+  }
+  header .logo {
+    width:140px;
+    height: auto;
+  }
+  .time-div {
+    pointer-events: none;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    font-weight: 200;
+	color: #fff;
+    letter-spacing: 1px;
+    padding: 13px 40px 13px;
+    /* outline: 0; */
+    border: 0px solid black;
+    /* cursor: pointer; */
+    /* position: relative; */
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  /* .time-div::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .time-div:hover::after {
+    top: 0px;
+    left: 0px;
+  } */
+  
+  footer {
+    position: fixed;
+    padding: 10px;
+    margin: auto -16px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    clear: both;
+    background-color: #73A5C6;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  footer p {
+    color: #fff;
+  }
+  .todoItem-display {
+	margin-right: 11%;
+	margin-left: 11%;
+	margin-top: 15px;
+  }
+  .todoItem-wrapper {
+    width: 31%;
+    height: 234px;
+    float: left;
+	margin: 0px 15px 30px;
+  }
+  .todoItem {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+	width: 100%;
+	height: auto;
+    padding: 10px;
+	display: flex;
+	flex-direction: column;
+  }
+  #overdue {
+    color: red;
+  }
+  .todoItem h2 {
+    font-size: 1em;
+    margin-bottom: 6px;
+    color: green;
+  }
+  .todoItem .description {
+	height: 62px;
+  }
+  #not-started {
+    background-color: rgb(255, 120, 127);
+  }
+  #in-progress {
+    background-color: rgb(255, 244, 90);
+  }
+  #completed {
+    background-color: rgb(119, 255, 126);
+  }
+  
+  .todoItem button {
+	position: static;
+    float: right;
+    margin-right: 10px;
+    color: #009FFD;
+    border: none;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  form.create-todoItem {
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  form.create-todoItem input,
+  form.create-todoItem textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  form.create-todoItem button {
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+    background: #009FFD;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+  }
+
+  form.create-todoItem .retract-create-area  {
+    position: absolute;
+    background: #010101;
+    right: 222px;
+    bottom: -18px;
+    width: 36px;
+    height: 36px;
+  }
+
+  form.create-todoItem .retract-create-area:hover  {
+    background: rgb(138, 137, 137);
+  }
+
+
+  form.create-todoItem .due-date-field {
+    padding-right: 10px;
+  }
+
+  form.create-todoItem .select-status-field {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  form.create-todoItem .select-tags-field {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  form.create-todoItem .status-select {
+    display: block;
+    font-family: inherit;
+  }
+
+  form.create-todoItem .tag-select {
+    display: block;
+    font-family: inherit;
+  }
+
+  form.create-todoItem add-tag-field {
+    display: block;
+  }
+
+  form.create-todoItem .add-tag-title {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  form.create-todoItem .add-tag-icon {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  form.create-todoItem .add-tag-colour {
+    margin: 20px;
+    position:absolute;
+    left: 300px;
+    top: 150px;
+    background-color: white; 
+  }
+
+  form.create-todoItem .add-tag-icon:hover {
+    background-color: grey; 
+  }
+
+  .tag-field {
+    display: block;
+  }
+
+  .tag-menu-item {
+    display: inline-block;
+  }
+
+  .delete-tag-icon {
+    display: inline-block;
+    color: red;
+  }
+
+  .delete-tag-button {
+    position: absolute;
+    left: 50px;
+  }
+
+  .error-msg {
+    color: red;
+  }
+
+  .error-msg:hover {
+    color: rgb(133, 81, 81);
+  }
